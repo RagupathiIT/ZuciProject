@@ -1,0 +1,64 @@
+{
+    "colleagues":[
+        {
+            "id":"1",
+            "name":"Ragu",
+            "role":"Senior Developer - Mean Stack",
+            "image":"https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg",
+            "location":"India - Chennai",
+            "reporting":"Mohamatha Begam",
+             "mail":"ragu@gmail.com",
+             "phone":"9876543201"
+        },
+        {
+            "id":"2",
+            "name":"Siva ",
+            "role":"Senior Developer - Mean Stack",
+            "image":"https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg",
+            "location":"India - Chennai",
+            "reporting":"Mohamatha Begam",
+             "mail":"siva@gmail.com",
+             "phone":"9876543201"
+        },
+        {
+            "id":"3",
+            "name":"Keerthana",
+            "role":"Senior Developer - Node Js",
+            "image":"https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg",
+            "location":"India - Chennai",
+            "reporting":"Mohamatha Begam",
+             "mail":"keerthana@gmail.com",
+             "phone":"9876543201"
+        },
+        {
+            "id":"4",
+            "name":"Prathapan",
+            "role":"Senior Developer - Dot Net",
+            "image":"https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg",
+            "location":"India - Chennai",
+            "reporting":"Mohamatha Begam",
+             "mail":"prathapan@gmail.com",
+             "phone":"9876543201"
+        },
+        {
+            "id":"5",
+            "name":"Rajasekar",
+            "role":"Senior Developer - Mern Stack",
+            "image":"https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg",
+            "location":"India - Chennai",
+            "reporting":"Mohamatha Begam",
+             "mail":"rajasekar@gmail.com",
+             "phone":"9876543201"
+        },
+        {
+            "id":"6",
+            "name":"Mohanambal",
+            "role":"Trainee - Mean Stack",
+            "image":"https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg",
+            "location":"India - Chennai",
+            "reporting":"Mohamatha Begam",
+             "mail":"mohanambal@gmail.com",
+             "phone":"9876543201"
+        }
+    ]
+}

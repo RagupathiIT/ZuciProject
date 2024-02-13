@@ -1,0 +1,115 @@
+<!-- 
+<div class="background">
+    <app-navbar></app-navbar>
+
+    <div id="body">
+        <p id="dashboard1">Attendance</p>
+        <p>Track / Attendance</p>
+
+        <div class="container1">
+            <div class="row">
+                <div class="col">
+                    <div class="date container">
+                        <form [formGroup]="dateCalculatorForm">
+                            <span class="datepicker-toggle">
+                                <span class="datepicker-toggle-button">Date : </span>
+                                <input type="date" class="datepicker-input" id="startDate" formControlName="startDate">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="controls">
+                        <div class="checkin">
+                            <button class="play" (click)="toggleCheckInOut()"><label for="play"><svg width="22"
+                                        height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 1.83337C5.9455 1.83337 1.83334 5.94554 1.83334 11C1.83334 16.0545 5.9455 20.1667 11 20.1667C16.0545 20.1667 20.1667 16.0545 20.1667 11C20.1667 5.94554 16.0545 1.83337 11 1.83337ZM11 18.3334C6.95659 18.3334 3.66667 15.0435 3.66667 11C3.66667 6.95662 6.95659 3.66671 11 3.66671C15.0434 3.66671 18.3333 6.95662 18.3333 11C18.3333 15.0435 15.0434 18.3334 11 18.3334Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.9167 6.41663H10.0833V11.3795L13.1019 14.398L14.3981 13.1019L11.9167 10.6205V6.41663Z"
+                                            fill="white" />
+                                    </svg>{{ isCheckIn ? 'Check In' : 'Check Out' }}</label></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <button class=" apply btn" routerLink="/applyLeave">Apply Leave</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="runningTime">
+        <div id="controls">
+            <div *ngIf="isCheckIn || timerRunning">
+                <p>{{ formatTime(elapsedTime) }}</p>
+            </div>
+            <div *ngIf="!isCheckIn && checkedOutTime > 0">
+            </div>
+        </div>
+    </div>
+        
+    </div>
+</div> -->
+
+
+
+
+<div class="background">
+    <app-navbar></app-navbar>
+ 
+    <div id="body">
+        <p id="dashboard1">Attendance</p>
+        <p>Track / Attendance</p>
+ 
+        <div class="container1">
+            <div class="row">
+                <div class="col">
+                    <div class="date container">
+                        <form [formGroup]="dateCalculatorForm">
+                            <span class="datepicker-toggle">
+                                <span class="datepicker-toggle-button">Date : </span>
+                                <input type="date" class="datepicker-input" id="startDate" formControlName="startDate">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="controls">
+                        <div class="checkin">
+                            <button class="play" (click)="toggleCheckInOut()"><label for="play">
+                                <svg width="22"
+                                        height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 1.83337C5.9455 1.83337 1.83334 5.94554 1.83334 11C1.83334 16.0545 5.9455 20.1667 11 20.1667C16.0545 20.1667 20.1667 16.0545 20.1667 11C20.1667 5.94554 16.0545 1.83337 11 1.83337ZM11 18.3334C6.95659 18.3334 3.66667 15.0435 3.66667 11C3.66667 6.95662 6.95659 3.66671 11 3.66671C15.0434 3.66671 18.3333 6.95662 18.3333 11C18.3333 15.0435 15.0434 18.3334 11 18.3334Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.9167 6.41663H10.0833V11.3795L13.1019 14.398L14.3981 13.1019L11.9167 10.6205V6.41663Z"
+                                            fill="white" />
+                                </svg>{{ isCheckIn ? 'Check In' : 'Check Out' }}</label></button>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col">
+                    <button class=" apply btn" routerLink="/applyLeave">Apply Leave</button>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- --------------- -->
+        <div class="runningTime">
+        <div id="controls">
+            <div *ngIf="isCheckIn || timerRunning">
+                <p>{{ formatTime(elapsedTime) }}</p>
+            </div>
+            <div *ngIf="!isCheckIn && checkedOutTime > 0">
+            </div>
+        </div>
+    </div>
+   
+        <!-- ---------------- -->
+    </div>
+</div>

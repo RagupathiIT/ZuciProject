@@ -1,0 +1,69 @@
+<div class="body">
+    <nav class="navbar navbar-light bg-white"> <a class="navbar-brand" href="#">PeopleSoft </a>
+    </nav>
+
+   <!--  login -->
+
+    <div class="container">
+        <div class="row">
+            <div class=" left col-md-7 col-sm-12">
+                <h1 class="h1">Zuci Systems</h1>
+                <h1 class="h2">Welcome Zenfamily</h1>
+                <p>Delivering excellence and creating Zen moments for those we work with is a culture ingrained deep into our DNA. The dedication that each Zengineer brings to the craft of building next generation technology is the purest form of passion built with total transparency.</p>
+                <img src="../../assets/images/source.gif" alt="image..." width="300px" height="300px">
+            </div>
+            <div class="col-md-5 col-sm-12">
+
+                <!-- <form id="form" [formGroup]="registrationForm" (ngSubmit)="addUser()"> -->
+                    <form id="form" [formGroup]="registrationForm">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Enter your mail id" 
+                        formControlName="email">
+                        <!-- <div class="error" *ngIf="handleError('email','required')">you must provide a <strong>email</strong></div> -->
+                        <!-- <span class="text-danger" *ngIf="submitted && registrationForm.controls.email.errors?.required">Please enter a valid email address</span> -->
+                        
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" 
+                        formControlName="   ">
+                        <!-- <div class="error"></div> -->
+                        <!-- <span class="text-danger" *ngIf="submitted && registrationForm.controls.email.errors?.required">Please enter a valid password</span> -->
+                    </div>
+                    <div class="input-group">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" name="cpassword" formControlName="cpassword"
+                         placeholder="Enter the same password" >
+                        <!-- <div class="error"></div> -->
+                        <!-- <span class="text-danger" *ngIf="submitted && registrationForm.controls.email.errors?.required">Password and Confirm  password must be same.</span> -->
+                    </div>
+
+                    <div class="form-check">
+                        <input class="remember form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Remember Me
+                        </label>
+                    </div>
+
+                    <br>
+                    <button  type="submit" class="btn btn-primary">Sign Up</button>
+                    <br><br>
+                    
+                    <div>Already have an account?
+                        <a routerLink="/login" class="register"> Login here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <form [formGroup]="registrationForm" (ngSubmit)="addUser()">
+    <input type="text" formControlName="email" id="email">
+    <div class="error" *ngIf="registrationForm.get('email')!.invalid && registrationForm.get('email')!.touched">
+      {{ getErrorMessage('email') }}
+    </div>
+  
+    <button type="submit" [disabled]="registrationForm.invalid">Submit</button>
+  </form>
+   -->

@@ -1,0 +1,48 @@
+<div class="body">
+    <nav class="navbar navbar-light bg-white"> <a class="navbar-brand" href="#">PeopleSoft </a>
+    </nav>
+
+    <!-- login -->
+
+    <div class="container">
+        <div class="row">
+            <div class=" left col-md-7 col-sm-12">
+                <h1 class="h1">Zuci Systems</h1>
+                <h1 class="h2">Welcome Zenfamily</h1>
+                <p>Delivering excellence and creating Zen moments for those we work with is a culture ingrained deep into our DNA. The dedication that each Zengineer brings to the craft of building next generation technology is the purest form of passion built with total transparency.</p>
+                <img src="../../assets/images/source.gif" alt="image..." width="300px" height="300px">
+            </div>
+            <div class="col-md-5 col-sm-12">
+
+                <form id="form" [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
+                    <div class="input-group">
+                        <label for="email">Email </label>
+                        <input type="text" name="email" id="email" placeholder="Enter your mail id" formControlName="email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" formControlName="password">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="remember form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Remember Me
+                        </label>
+                    </div>
+
+                    <br>
+                    <button type="submit" class="btn btn-primary" >Login</button>
+                    <br><br>
+                    <a href="#" class="forget">Forget Password?</a>
+                    <br><br>
+                    <div>Don't you have an account?
+                        <a routerLink="/register" class="register"> Register here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+<!-- <div class="background">
+    <div id="body">
+        <app-navbar></app-navbar>
+
+       
+        <div class="cards container ">
+            <p id="dashboard1">Dashboard</p>
+            <p id="dashboard2">Home / Dashboard</p>
+            <div class="row">
+              <div class="col-md-3 mr-3">
+                <div class="main">
+                  <h5 class="card-title "> Present <span class="month">| This Month</span> </h5>
+                  <img class="image" src="../../assets/images/present.png" alt="" srcset="">
+                  <h3 class="days ms-right">12 <span class="month">Days</span> </h3>
+                  <h5 class="card-title">18 % <span class="month">increase</span></h5>
+                </div>
+              </div>
+              <div class="col-md-3 mr-3">
+                <div class="main">
+                  <h5 class="card-title "> Absent <span class="month">| This Month</span> </h5>
+                  <img class="image" src="../../assets/images/absent.png" alt="" srcset="">
+                  <h3 class="days ms-right">4 <span class="month">Days</span> </h3>
+                  <h5 class="card-title">13 % <span class="month">increase</span></h5>
+                </div>
+              </div>
+              <div class="col-md-3 mr-3">
+                <div class="main">
+                  <h5 class="card-title "> Attendance <span class="month">| This Month</span> </h5>
+                  <img class="image" src="../../assets/images/increase.png" alt="" srcset="">
+                  <h3 class="days ms-right">89 %</h3>
+                  <h5 class="card-title">18 % <span class="month">increase</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="chart">
+            <canvasjs-chart [options]="lineChartOptions"></canvasjs-chart>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+<div class="background">
+  <div id="body">
+    <app-navbar></app-navbar>
+    <!-- cards -->
+    <div class="cards container ">
+      <p id="dashboard1">Dashboard</p>
+      <p id="dashboard2">Home / Dashboard</p>
+      <div class="row">
+        <div class="col-md-3 mr-3">
+          <div class="main">
+            <h5 class="card-title "> Present <span class="month">| This Month</span> </h5>
+            <div *ngIf="selectedMonth === 'January'">
+              <h3>20 Days</h3>
+            </div>
+            <div *ngIf="selectedMonth === 'February'">
+              <h3>18 Days</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mr-3">
+          <div class="main">
+            <h5 class="card-title "> Absent <span class="month">| This Month</span></h5>
+            <div *ngIf="selectedMonth === 'January'">
+              <h3>5 Days</h3>
+            </div>
+            <div *ngIf="selectedMonth === 'February'">
+              <h3>2 Days</h3>
+            </div>
+            <ng-template #elseBlock>
+              <h3>Please Select a valid Month</h3>
+            </ng-template>
+          </div>
+        </div>
+        <div class=" col-md-3 mr-3">
+              <div class="main">
+                <h5 class="card-title "> Attendance <span class="month">| This Month</span> </h5>
+                <div *ngIf="selectedMonth === 'January'">
+                  <h3>82 %</h3>
+                </div>
+                <div *ngIf="selectedMonth === 'February'">
+                  <h3>96 %</h3>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col-md-2 mr-3">
+              <div class="form-group">
+                <label for="month" class="card-title">Select Month </label>
+                <select class="form-control" id="month" name="month" required [(ngModel)]="selectedMonth"
+                  (change)="onMonthChange()" placeholder="Select">
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dash-bottom">
+        <br/>
+        <h1 class="dash-container">This Year</h1>
+
+        
+        <table class="table table-bordered tabledata">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Present</th>
+              <th>Absent</th>
+              <th>Attendance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>January</td>
+              <td>20 Days</td>
+              <td>5 Days</td>
+              <td>82 %</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>18</td>
+              <td>2</td>
+              <td>96 %</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="b"></div>
+      </div>
+    </div>
+
+    
+ 

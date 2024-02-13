@@ -1,0 +1,45 @@
+<div class="body">
+  <div class="body1 container ms-right">
+    <h2 class="apply">Apply Leave</h2>
+    <form  method="post"  >
+      <div class="form-group">
+        <label for="employeeId">Employee ID : <br></label>
+        <input type="text" class="form-control" id="employeeId" name="employeeId" placeholder="Enter Employee ID" required formControlName="employeeId">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="leavetype">Leave Type : </label>
+        <select class="form-control" id="leavetype" name="leavetype" required formControlName="leavetype">
+          <option value="" disabled selected>Select </option>
+          <option value="Compensatory">Compensatory Off</option>
+          <option value="Maternity ">Extended Maternity Leave</option>
+          <option value="loss">Loss of Pay</option>
+          <option value="marriage">Marriage Leave</option>
+          <option value="paid">Maternity Leave Paid</option>
+          <option value="previlege">previlege</option>
+          <option value="sabbatical">Sabbatical Leave</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="date">Date : </label>
+        <input type="date" class="form-control" id="date" name="date" required formControlName="date">
+
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="email"> Team Email ID : </label>
+        <input type="email" class="form-control" name="email" id="email" required formControlName="email">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="reason">Reason for leave</label>
+        <textarea name="reason" id="reason" cols="70" rows="2" required formControlName="reason"></textarea>
+      </div>
+      <div class="buttons">
+        <button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+        <button id="cancel" type="reset" class="btn btn-primary" routerLink="/attendance">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

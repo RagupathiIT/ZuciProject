@@ -1,0 +1,208 @@
+.timer-container {
+    padding: 50px;
+}
+ 
+#hou::after {
+    content: "0";
+    animation-name: counter_9;
+    animation-duration: 60000s;
+    animation-delay: 0s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+#hou::before {
+    content: "0";
+    animation-name: counter_5;
+    animation-duration: 600000s;
+    animation-delay: 0s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+#men::after {
+    content: "0";
+    animation-name: counter_9;
+    animation-duration: 600s;
+    animation-delay: 0s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+#men::before {
+    content: "0";
+    animation-name: counter_5;
+    animation-duration: 6000s;
+    animation-delay: 0s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+#sec::after {
+    content: "0";
+    animation-name: counter_9;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+#sec::before {
+    content: "0";
+    animation-name: counter_5;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+#play,
+#pause,
+#reset {
+    display: none;
+}
+#pause:checked + * + .timer-container *::after,
+#pause:checked + * + .timer-container *::before {
+    animation-play-state: paused;
+}
+#reset:checked + * + * + .timer-container *::after,
+#reset:checked + * + * + .timer-container *::before {
+    animation: none;
+}
+#controls {
+    text-align: center;
+}
+#play--btn,
+#pause--btn,
+#reset--btn {
+    cursor: pointer;
+}
+#play--btn:active,
+#pause--btn:active,
+#reset--btn:active {
+    // border: 6px solid #166;
+    background-color: blue;
+}
+#play--btn::after,
+#pause--btn::after,
+#reset--btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    // border: 12px solid transparent;
+    // border-left-color: #144;
+    // border-right-width: 18px;
+    // border-left-width: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+}
+#pause--btn::after {
+    // border: 0px solid;
+    // border-left: 8px solid #144;
+    // border-right: 8px solid #144;
+    width: 8px;
+    height: 24px;
+    transform: translate(-50%, -50%);
+}
+#reset--btn::after {
+    border: 10px solid #144;
+    transform: translate(-50%, -50%);
+}
+#reset:checked + * + * + * + * #reset--btn,
+#pause:checked + * + * + * #pause--btn,
+#reset:checked + * + * + * + * #pause--btn,
+#play:checked + * + * #play--btn {
+    opacity: 0.4;
+    pointer-events: none;
+}
+ 
+@keyframes counter_9 {
+    0%,
+    100% {
+        content: "0";
+    }
+    10% {
+        content: "1";
+    }
+    20% {
+        content: "2";
+    }
+    30% {
+        content: "3";
+    }
+    40% {
+        content: "4";
+    }
+    50% {
+        content: "5";
+    }
+    60% {
+        content: "6";
+    }
+    70% {
+        content: "7";
+    }
+    80% {
+        content: "8";
+    }
+    90% {
+        content: "9";
+    }
+}
+ 
+@keyframes counter_5 {
+    0%,
+    100% {
+        content: "0";
+    }
+    16.66% {
+        content: "1";
+    }
+    33.32% {
+        content: "2";
+    }
+    49.98% {
+        content: "3";
+    }
+    66.64% {
+        content: "4";
+    }
+    83.3% {
+        content: "5";
+    }
+}
+ 
+.pause{
+    margin-right: 20px;
+    border-radius: 25px;
+    height:50px;
+    width:120px;
+    background-color: rgb(39,205,165);
+    border-color: transparent;
+    padding-top: 6px;
+}
+.play{
+    margin-right: 20px;
+    border-radius: 25px;
+    height:50px;
+    width:120px;
+    background-color: rgb(39,205,165);
+    border-color: transparent;
+    padding-top: 6px;
+}
+.pauseimg{
+    height: 23px;
+    width: 20px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.playimg{
+    height: 23px;
+    width: 20px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#timer{
+    align-items: center;
+}

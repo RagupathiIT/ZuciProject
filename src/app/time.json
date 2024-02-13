@@ -1,0 +1,88 @@
+{
+  "attendance": [
+    {
+      "id": "4881",
+      "date": "2024-02-12",
+      "checkInTime": "10:34 AM",
+      "checkOutTime": "06:34 PM",
+      "totalCheckInHours": "08:00"
+    },
+    {
+      "id": "8e77",
+      "date": "2024-02-12",
+      "checkInTime": "12:59 PM",
+      "checkOutTime": "08:00 PM",
+      "totalCheckInHours": "08:01:00"
+    },
+    {
+      "id": "0cd4",
+      "date": "2024-02-12",
+      "checkInTime": "01:03 PM",
+      "checkOutTime": "09:03 PM",
+      "totalCheckInHours": "08:00:00"
+    },
+    {
+      "id": "a62c",
+      "date": "2024-02-12",
+      "checkInTime": "01:06 PM",
+      "checkOutTime": "09:06 PM",
+      "totalCheckInHours": "08:00:00"
+    },
+    {
+      "id": "5d49",
+      "date": "2024-02-12",
+      "checkInTime": "01:08 PM",
+      "checkOutTime": "09:08 PM",
+      "totalCheckInHours": "08:00:00"
+    },
+    {
+      "id": "4888",
+      "date": "2024-02-12",
+      "checkInTime": "10:34 AM",
+      "checkOutTime": "06:34 PM",
+      "totalCheckInHours": "08:00"
+    },
+    {
+      "id": "8e07",
+      "date": "2024-02-12",
+      "checkInTime": "12:59 PM",
+      "checkOutTime": "08:00 PM",
+      "totalCheckInHours": "08:01:00"
+    },
+    {
+      "id": "0c04",
+      "date": "2024-02-12",
+      "checkInTime": "01:03 PM",
+      "checkOutTime": "09:03 PM",
+      "totalCheckInHours": "08:00:00"
+    },
+    {
+      "id": "a6oc",
+      "date": "2024-02-12",
+      "checkInTime": "01:06 PM",
+      "checkOutTime": "09:06 PM",
+      "totalCheckInHours": "08:00:00"
+    },
+    {
+      "id": "5d48",
+      "date": "2024-02-12",
+      "checkInTime": "01:08 PM",
+      "checkOutTime": "09:08 PM",
+      "totalCheckInHours": "08:00:00"
+    },
+    {
+      "id": "ebfc",
+      "date": "2024-02-13",
+      "checkInTime": "10:46 AM",
+      "checkOutTime": "10:46 AM",
+      "totalCheckInHours": "00:00:00"
+    },
+    {
+      "id": "091a",
+      "date": "2024-02-13",
+      "checkInTime": "10:47 AM",
+      "checkOutTime": "",
+      "totalCheckInHours": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">{{name}}</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                (click)="bsModalRef.hide()"></button>
+        </div>
+        <div class="modal-body">
+            <img src="{{image}}" alt="profile image" class="model-img">
+            <p id="mail">{{mail}}</p>
+            <p>Employee Id : <span> {{id}}</span></p>
+            <p>Employee Name : <span>{{name}}</span></p>
+            <p>Role : <span> {{role}}</span></p>
+            <p>Location : <span>{{location}}</span></p>
+            <p>Reporting to : <span> {{reporting}}</span> - Manager TN</p>
+            <p>Phone : <span>{{phone}}</span></p>
+
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn secondary" data-bs-dismiss="modal"
+                (click)="bsModalRef.hide()">Close</button>
+            <button type="button" class="btn btn-primary" (click)="bsModalRef.hide()">Ok</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+{
+    "month":[
+        {
+            "name":"January",
+            "pdays":"20 Days",
+            "absent":"5 Days",
+            "percentage":"80 %"
+        },
+        {
+            "name":"February",
+             "pdays":"18 Days",
+             "absent":"2 Days",
+             "percentage":"96 %"
+        }
+     
+       
+    ]
+}

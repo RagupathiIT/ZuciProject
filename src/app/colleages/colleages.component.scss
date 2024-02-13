@@ -1,0 +1,47 @@
+#body {
+    padding-left: 300px;
+    
+}
+.background{
+    background-color: rgb(246, 249, 255);
+    // height: 650px;
+}
+#dashboard1 {
+    font-size: 18px;
+    padding-top: 10px;
+    color: rgba(65, 84, 241, 1);
+}
+
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  
+  .aqua-gradient {
+    background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+  }
+  
+  .testimonial-card .avatar {
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust this property as needed */
+  }
+  
+  .sec {
+    flex: 0 0 calc(33.33% - 1rem); /* Adjust card width */
+    margin-bottom: 1rem;
+    
+  }
+  
+ 
